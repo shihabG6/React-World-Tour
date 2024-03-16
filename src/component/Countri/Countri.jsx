@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./countri.css";
-const Countri = ({ Countri ,handelCountryCount}) => {
+const Countri = ({ Countri ,handelCountryCount,handelCountryFlage}) => {
   const { name,cca2, flags, maps,population,area} = Countri;
 
 
@@ -26,6 +26,7 @@ const Countri = ({ Countri ,handelCountryCount}) => {
       <p>Populasion:{population}</p>
       <p>Area: {area} m<sup>2</sup></p>
       <p>Code:{cca2}</p>
+      <button onClick={()=>handelCountryFlage(Countri)}>Add Flage</button>
       <button onClick={()=>handelCountryCount(Countri)}>Visited Country</button>
       <button onClick={handelVisite}>{visite? 'Vsite':'Going'}</button>
       <p>{visite?'this country visited':'this is not visted'}</p>

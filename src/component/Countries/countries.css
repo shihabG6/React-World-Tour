@@ -2,3 +2,6 @@
   display: grid;
   grid-template-columns:repeat(3,1fr);
 }
+.visit-container img{
+ width: 100px;
+}
