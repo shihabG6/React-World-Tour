@@ -1,3 +1,11 @@
 .countri{
-  
+  border: 2px solid silver;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(222, 222, 222, 0.21);
 }
